@@ -1,0 +1,36 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  min-height: 5rem;
+  min-width: 7rem;
+  border-radius: 8px;
+  padding: 1.6rem 2rem;
+  box-shadow: 0px 2px 5px gray;
+  background-color: white;
+}
+
+.modal img {
+  margin: 1rem auto;
+  height: 250px;
+}
+
+.modal h3 {
+  margin: 1rem 0;
+}
+
+.modal p {
+  font-size: 0.8rem;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.526);
+  height: 100vh;
+  width: 100vw;
+}

@@ -1,0 +1,6 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.centered {
+  margin-top: 5rem;
+  text-align: center;
+}
