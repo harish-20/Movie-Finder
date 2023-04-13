@@ -34,3 +34,10 @@
   height: 100vh;
   width: 100vw;
 }
+
+.noimg {
+  height: 150px;
+  margin: auto;
+  display: grid;
+  place-content: center;
+}

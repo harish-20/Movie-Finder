@@ -16,10 +16,16 @@ const ModalDetails = (props) => {
     <>
       <div className={classes.modal}>
         <h3>{props.movie.title}</h3>
-        <img
-          src={`https://image.tmdb.org/t/p/w500${props.movie.backdrop_path}`}
-          alt="movie"
-        />
+        {props.movie.backdrop_path ? (
+          <img
+            src={`https://image.tmdb.org/t/p/w500${props.movie.backdrop_path}`}
+            alt="movie"
+          />
+        ) : (
+          <div className={classes.noimg}>
+            <p>No image</p>
+          </div>
+        )}
         <Info title="Original Title" info={props.movie.original_title} />
         <Info title="Overview" info={props.movie.overview} />
         <Info title="Release Date" info={props.movie.release_date} />
